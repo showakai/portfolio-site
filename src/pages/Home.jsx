@@ -4,7 +4,7 @@ import Mainvisual from '../components/mainvisual/Mainvisual'
 import Skills from '../components/skills/Skills'
 import Work from '../components/Work/Work'
 import bgImg from '../assets/images/bgImg.png'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import { theme } from '../styles/theme'
 

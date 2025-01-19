@@ -6,7 +6,7 @@ export const Swork = styled.section`
   position: relative;
   .main-title {
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
 
   & .side-nav {
@@ -58,24 +58,32 @@ export const Swork = styled.section`
       display: none;
     }
   }
+
+  & .work__titlebox {
+    position: relative;
+    z-index: 2;
+  }
+  h2 {
+    position: relative;
+  }
   & .bg-drop {
     position: absolute;
-    top: 15%;
-    left: 10%;
-    z-index: 1;
-    width: 5vw;
+    top: -30px;
+    left: -50px;
+    width: 3em;
+    z-index: -1;
     transform: rotate(240deg);
 
     @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
       top: 8%;
-      left: 5%;
+      left: -3%;
 
       width: 15vw;
     }
     @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
-      top: 4%;
+      top: -16%;
+      left: -7%;
 
-      z-index: 0;
       width: 23vw;
     }
   }
@@ -104,7 +112,7 @@ export const Swork = styled.section`
     transform: rotate(75deg);
     @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
       top: 60%;
-      left: -10%;
+      left: -30%;
       width: 60vw;
     }
   }

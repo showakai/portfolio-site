@@ -3,15 +3,14 @@ import image1 from '../../assets/images/card-img1v2.webp'
 import image2 from '../../assets/images/card-img2v2.webp'
 import image3 from '../../assets/images/card-img3v2.webp'
 import image4 from '../../assets/images/card-img4v2.webp'
-import image5 from '../../assets/images/card-img5v2.webp'
-import image6 from '../../assets/images/card-img6v2.webp'
-import gradCircle3 from '../../assets/images/grad-circle3.webp'
-import gradCircle1 from '../../assets/images/grad-circle1.webp'
+import image5 from '../../assets/images/card-img6v2.webp'
+import image6 from '../../assets/images/card-img5v2.webp'
+import gradCircle3 from '../../assets/images/grad-circle3v2.webp'
+import gradCircle1 from '../../assets/images/grad-circle1v2.webp'
 
 import Button from '../button/Button'
 import { Swork, Sbutton, StyledCard } from './work.styles'
-import { theme } from '../../styles/theme'
-import { color } from 'chart.js/helpers'
+
 import { useTheme } from 'styled-components'
 import FadeinSection from '../../lib/FadeinSection'
 import { useInView } from 'react-intersection-observer'
@@ -32,16 +31,16 @@ const Work = () => {
       'ポートフォリオ',
       '株式会社izanow',
       'SeasideHotel',
-      'Weatherアプリ',
       '家計簿アプリ',
+      'Weatherアプリ',
     ],
     text: [
       '人材紹介会社コーポレートサイト',
       '私自身のポートフォリオ用サイト',
       '化粧品を扱う会社のコーポレートサイト',
       '【架空】海辺のリゾートホテルのサイト',
-      '世界中の天気が取得できるシンプルなアプリ',
       '毎月の収支を記録できる家計簿アプリ',
+      '世界中の天気が取得できるシンプルなアプリ',
     ],
     image: [image1, image2, image3, image4, image5, image6],
     path: [
@@ -49,8 +48,8 @@ const Work = () => {
       'portfolio',
       'izanow',
       'seasideHotel',
-      'weatherApp',
       'householdApp',
+      'weatherApp',
     ],
     type: [
       ['Website', 'HTML/CSS', 'Javascript'],
@@ -99,6 +98,7 @@ const Work = () => {
               className="main-title"
             >
               Works
+              <img className="bg-drop" src={gradCircle1} alt="" />
             </h2>
 
             <h3
@@ -108,7 +108,6 @@ const Work = () => {
               制作したもの
             </h3>
           </FadeinSection>
-          <img className="bg-drop" src={gradCircle1} alt="" />
 
           <div className="work__contents">
             {works.map((work, index) => {
@@ -176,6 +175,7 @@ const Work = () => {
                 </Scard>
               )
             })}
+            <img className="bg-circle grad3" src={gradCircle3} alt="" />
           </div>
           <Button
             color={theme.colors.mainColor}
@@ -184,7 +184,6 @@ const Work = () => {
             {isTopPage ? 'More' : 'Topへ戻る'}
           </Button>
         </div>
-        <img className="bg-circle grad3" src={gradCircle3} alt="" />
       </Swork>
     </>
   )

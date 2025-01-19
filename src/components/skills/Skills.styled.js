@@ -37,14 +37,14 @@ export const Sskills = styled.section`
     margin-bottom: 40px;
     line-height: 2;
     letter-spacing: 0.05em;
-    margin-left: 20vw;
+    margin-left: min(20vw, 300px);
     font-family: 'Noto Sans JP';
   }
 
   & p.skills__title {
     margin-block: 80px 20px;
     font-size: 3.5rem;
-    margin-left: 20vw;
+    margin-left: min(20vw, 300px);
   }
   @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
     & p.skills__read,
@@ -92,7 +92,7 @@ export const Sskills = styled.section`
       width: 100%;
       display: flex;
       align-items: start;
-      margin-left: 20vw;
+      margin-left: min(20vw, 300px);
       position: relative;
 
       & svg#skill-line {

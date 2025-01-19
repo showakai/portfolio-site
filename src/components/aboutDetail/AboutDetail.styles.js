@@ -24,7 +24,7 @@ export const SAboutDetail = styled.section`
       z-index: 0;
     }
     &__img {
-      width: 20vw;
+      width: 17vw;
       font-size: 0;
       box-shadow:
         2px 2px 10px #ccc,
@@ -32,6 +32,10 @@ export const SAboutDetail = styled.section`
       margin: 0 auto;
       position: relative;
       z-index: 2;
+      position: relative;
+      img {
+        width: 100%;
+      }
     }
     /* &__bg-img {
       width: 100%;
@@ -46,13 +50,13 @@ export const SAboutDetail = styled.section`
 
     &__bg {
       position: absolute;
-      width: 20%;
-      top: 230px;
-      right: 260px;
+      width: 30%;
+      top: 50%;
+      right: -50%;
       z-index: -1;
     }
     &__name {
-      font-size: 1.6rem;
+      font-size: clamp(16px, 1.1vw, 20px);
       color: ${({ theme }) => theme.colors.mainColor};
       margin-bottom: 20px;
       font-weight: 600;
@@ -60,7 +64,7 @@ export const SAboutDetail = styled.section`
     }
 
     &__introduction {
-      font-size: 1.5rem;
+      font-size: clamp(15px, 1vw, 20px);
       color: ${({ theme }) => theme.colors.mainColor};
       text-align: left;
       margin-inline: auto;
@@ -114,7 +118,7 @@ export const SAboutDetail = styled.section`
       &__bg {
         width: 28%;
         top: 70px;
-        right: 160px;
+        right: -70px;
       }
     }
 
@@ -125,7 +129,7 @@ export const SAboutDetail = styled.section`
       &__bg {
         width: 60%;
         top: 140px;
-        right: -10px;
+        right: -70px;
       }
       &__introduction {
         width: 100%;
@@ -246,18 +250,19 @@ export const SAboutDetail = styled.section`
       justify-content: space-between;
       align-items: center;
       width: 120vw;
+      max-width: 2200px;
 
       li {
         list-style: none;
         color: ${({ theme }) => theme.colors.white};
         text-align: left;
         width: calc((100% - 700px) / 4);
-        font-size: 1.5rem;
+        font-size: clamp(15px, 1vw, 20px);
         letter-spacing: 0.05em;
         line-height: 2;
 
         time {
-          font-size: 1.4rem;
+          font-size: clamp(14px, 0.8vw, 18px);
         }
         .text:nth-of-type(1) {
           max-height: 100px;
@@ -276,7 +281,7 @@ export const SAboutDetail = styled.section`
             display: block;
             content: '';
             height: 0.5px;
-            width: 740px;
+            width: max(60vw, 768px);
             background-color: ${({ theme }) => theme.colors.white};
             position: absolute;
             top: 5px;

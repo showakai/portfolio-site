@@ -5,7 +5,7 @@ import Vivus from 'vivus'
 import gsap from 'gsap'
 import _ScrollTrigger, { ScrollTrigger } from 'gsap/ScrollTrigger'
 import FadeinSection from '../../lib/FadeinSection'
-import gradCircle1 from '../../assets/images/grad-circle1-2.webp'
+import gradCircle1 from '../../assets/images/grad-circle1v2.webp'
 
 const AboutDetail = () => {
   const isMobile = window.innerWidth <= 430
@@ -102,9 +102,9 @@ const AboutDetail = () => {
           <FadeinSection dir="up">
             <div className="iam__img">
               <img src={img} alt="" />
+              <img className="iam__bg" src={gradCircle1} alt="" />
             </div>
           </FadeinSection>
-          <img className="iam__bg" src={gradCircle1} alt="" />
         </div>
 
         <p className="iam__name">若井　咲 -Wakai Sho</p>

@@ -24,7 +24,7 @@ export const theme = {
   breakPoints: {
     mobile: '430px',
     tablet: '1025px',
-    laptop: '1440px',
+    laptop: '1450px',
   },
 
   fontSizes: {

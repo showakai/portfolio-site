@@ -80,10 +80,10 @@ export const Sabout = styled.section`
   .about {
     &__container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
 
-      gap: 0%;
+      gap: max(5vw, 100px);
 
       @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
         display: block;
@@ -92,10 +92,9 @@ export const Sabout = styled.section`
 
     &__img {
       flex-basis: 40%;
-      flex-shrink: 0;
 
       img.about-img {
-        width: 18vw;
+        width: max(350px, 20vw);
         z-index: 2;
         position: relative;
       }
@@ -103,9 +102,15 @@ export const Sabout = styled.section`
       img.bg-img {
         width: 30%;
         position: absolute;
-        top: 20%;
+        top: 22%;
         left: 0%;
+
         z-index: 0;
+        @media (min-width: ${({ theme }) => theme.breakPoints.laptop}) {
+          width: 20%;
+          top: 17%;
+          left: 20%;
+        }
       }
       @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
         img.about-img {
@@ -127,6 +132,8 @@ export const Sabout = styled.section`
         img.bg-img {
           width: 100%;
           height: 320px;
+          left: 0;
+          top: -2%;
 
           object-fit: cover;
           object-position: top;
@@ -135,7 +142,7 @@ export const Sabout = styled.section`
     }
 
     &__contents {
-      width: 40%;
+      width: 50%;
       font-size: 1.5rem;
       font-family: 'Noto sans jp';
       color: ${({ theme }) => theme.colors.white};

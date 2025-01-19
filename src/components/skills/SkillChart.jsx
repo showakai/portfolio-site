@@ -40,7 +40,7 @@ export function SkillChart() {
     { tool: 'HTML/CSS', ability: 90, icon: icon4, period: 3 },
     { tool: 'Sass', ability: 70, icon: icon9, period: 3 },
     { tool: 'Javascript', ability: 70, icon: icon5, period: 3 },
-    { tool: 'React', ability: 60, icon: icon6, period: '半' },
+    { tool: 'React', ability: 50, icon: icon6, period: '半' },
     { tool: 'Typescript', ability: 40, icon: icon7, period: 1 },
     { tool: 'Next.js', ability: 30, icon: icon8, period: '半' },
   ]
