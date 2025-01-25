@@ -53,7 +53,7 @@ const Work = () => {
     ],
     type: [
       ['Website', 'HTML/CSS', 'Javascript'],
-      ['Website', 'HTML/CSS', 'Javascript'],
+      ['Website', 'React', 'Javascript'],
       ['Website', 'HTML/CSS', 'Javascript'],
       ['Website', 'HTML/CSS', 'Javascript'],
       ['WebApp', 'Typescript', 'React'],

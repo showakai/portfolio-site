@@ -31,20 +31,23 @@ export const ballScale = keyframes`
 const Sloading = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: ${({ theme }) => theme.colors.bgWhite};
+  background-color: ${({ theme }) => theme.colors.workBg};
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 1.5s ease-in-out;
   position: relative;
   z-index: 1000;
+  text-align: center;
 
   p {
-    font-size: 4rem;
+    font-size: 3.3rem;
     text-align: center;
+    letter-spacing: 0.3em;
 
-    color: ${({ theme }) => theme.colors.mainColor};
+    color: ${({ theme }) => theme.colors.bgWhite};
     font-weight: 100;
+    text-transform: uppercase;
   }
   img {
     position: absolute;
