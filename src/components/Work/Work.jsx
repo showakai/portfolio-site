@@ -40,7 +40,7 @@ const Work = () => {
       '化粧品を扱う会社のコーポレートサイト',
       '【架空】海辺のリゾートホテルのサイト',
       '毎月の収支を記録できる家計簿アプリ',
-      '世界中の天気が取得できるシンプルなアプリ',
+      '世界の天気が検索できるシンプルなアプリ',
     ],
     image: [image1, image2, image3, image4, image5, image6],
     path: [
@@ -84,6 +84,7 @@ const Work = () => {
       <Swork
         style={{
           backgroundColor: isTopPage ? 'transparent' : theme.colors.bgWhite,
+          paddingTop: isTopPage ? `calc(100vh + 100px)` : '130px',
         }}
       >
         <div className="side">

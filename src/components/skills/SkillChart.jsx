@@ -1,8 +1,6 @@
 import { Doughnut, Pie } from 'react-chartjs-2'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
-import icon1 from '../../assets/images/skills-icon1.png'
-import icon2 from '../../assets/images/skills-icon2.png'
-import icon3 from '../../assets/images/skills-icon3.png'
+
 import icon4 from '../../assets/images/skills-icon4.png'
 import icon5 from '../../assets/images/skills-icon5.png'
 import icon6 from '../../assets/images/skills-icon6.png'
@@ -23,10 +21,16 @@ const customIconPlugin = {
 
     const icon = config.options.plugins.customIcon.icon
 
-    const img = new Image()
-    img.src = icon // アイコンのパス
-    img.onload = () => {
-      ctx.drawImage(img, centerX - 15, centerY - 15, 30, 30) // アイコンを描画
+    if (!chart.customIconImage) {
+      const img = new Image()
+      img.src = config.options.plugins.customIcon.icon // アイコンのパス
+      img.onload = () => {
+        chart.customIconImage = img // キャッシュとして保持
+        ctx.drawImage(img, centerX - 15, centerY - 15, 30, 30) // アイコンを描画
+      }
+    } else {
+      // すでに画像がロードされている場合はそのまま描画
+      ctx.drawImage(chart.customIconImage, centerX - 15, centerY - 15, 30, 30)
     }
   },
 }
@@ -44,12 +48,6 @@ export function SkillChart() {
     { tool: 'Typescript', ability: 40, icon: icon7, period: 1 },
     { tool: 'Next.js', ability: 30, icon: icon8, period: '半' },
   ]
-  const designSkills = [
-    { tool: 'illustrator', ability: 70, icon: icon1, period: 3 },
-    { tool: 'photoshop', ability: 50, icon: icon2, period: 3 },
-    { tool: 'Figma', ability: 60, icon: icon3, period: 1 },
-  ]
-  let hoveredClass = ''
 
   const handleHover = (skill) => {
     setHoverdSkill(skill)

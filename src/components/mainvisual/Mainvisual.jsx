@@ -26,7 +26,7 @@ const Mainvisual = () => {
     })
 
     tl.fromTo(
-      'h1',
+      'h1, .scroll',
       { opacity: 0, filter: 'blur(20px)' },
       { opacity: 1, filter: 'blur(0px)', duration: 1.5, delay: 0.5 },
     )
@@ -80,7 +80,7 @@ const Mainvisual = () => {
         },
       ),
       gsap.fromTo(
-        '.blur1, .blur2',
+        '.blur1, .blur2, h1, .scroll, .bg-letter',
         { opacity: 1 },
         {
           opacity: 0,
@@ -144,7 +144,7 @@ const Mainvisual = () => {
         </h1>
       </div>
 
-      <Sscroll>
+      <Sscroll className="scroll">
         <span className="scroll-line"></span>
         <p>scroll</p>
       </Sscroll>

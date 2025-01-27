@@ -19,7 +19,8 @@ const SBackgroundChange = styled.div`
   width: 100vw;
   background-image: none;
   transition: all 1s;
-  z-index: -10;
+  z-index: 2;
+  position: relative;
 `
 
 const Home = () => {

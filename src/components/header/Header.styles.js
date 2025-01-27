@@ -9,7 +9,7 @@ export const Snav = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
 
   justify-content: space-between;
@@ -30,6 +30,7 @@ export const Snav = styled.nav`
       position: relative;
       border-radius: 50%;
       transition: all 0.8s;
+      box-shadow: 0px 0px 15px rgba(110, 100, 120, 0.3);
 
       span {
         display: block;
@@ -51,8 +52,11 @@ export const Snav = styled.nav`
     @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
       display: block;
 
-      z-index: 105;
+      z-index: 1005;
       &.isOpen {
+        div {
+          box-shadow: none;
+        }
         span {
           transform: rotate(-45deg);
           transform-origin: right;

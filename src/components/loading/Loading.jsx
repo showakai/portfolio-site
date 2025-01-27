@@ -43,7 +43,7 @@ const Sloading = styled.div`
   p {
     font-size: 3.3rem;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.05em;
 
     color: ${({ theme }) => theme.colors.bgWhite};
     font-weight: 100;
@@ -66,6 +66,9 @@ const Sloading = styled.div`
       left: 15%;
       width: 250px;
       height: 80px;
+    }
+    p {
+      transform: translateX(5px);
     }
   }
 

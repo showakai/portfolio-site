@@ -8,6 +8,7 @@ import styled from 'styled-components'
 const ShomeScreen = styled.div`
   opacity: 0;
   transition: all 2s;
+
   &.fade {
     opacity: 1;
   }
@@ -24,7 +25,7 @@ const Layout = () => {
       setTimeout(() => {
         setIsFade(true)
       }, 100)
-    }, 2000)
+    }, 1800)
     window.scrollTo(0, 0)
     return () => clearTimeout(timer)
   })

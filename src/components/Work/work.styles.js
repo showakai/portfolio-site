@@ -4,6 +4,8 @@ export const Swork = styled.section`
   padding-top: 130px;
   padding-bottom: 180px;
   position: relative;
+  z-index: 9;
+
   .main-title {
     position: relative;
     z-index: 1;
@@ -15,7 +17,7 @@ export const Swork = styled.section`
     transform: rotate(270deg);
     transform-origin: left;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 3%;
   }
   & .side-line {
@@ -25,7 +27,7 @@ export const Swork = styled.section`
     transform: rotate(90deg);
     transform-origin: left;
     position: absolute;
-    top: 22%;
+    top: 52%;
     left: 3%;
 
     &::after {
@@ -124,6 +126,7 @@ export const StyledCard = styled.div`
   z-index: 2;
 
   padding: 25px;
+  padding-bottom: 30px;
   background-color: rgba(244, 248, 250, 0.8);
   transition: 0.6s;
   border-radius: 10px;
@@ -193,7 +196,7 @@ export const StyledCard = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
     width: 100%;
-    padding: 15px;
+    padding-inline: 15px;
     margin-bottom: 30px;
     padding-top: 0;
     h3 {

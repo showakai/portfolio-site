@@ -39,7 +39,9 @@ export const spreadCircle = keyframes`
 export const Smainvisual = styled.div`
   width: 100vw;
   height: 100svh;
-  position: relative;
+  position: fixed;
+  top: 0;
+  padding-top: 100vh;
   overflow: hidden;
 
   & .bg-drop {
@@ -47,7 +49,7 @@ export const Smainvisual = styled.div`
     height: 25vw;
     position: absolute;
     top: 25%;
-    left: 35%;
+    left: 37%;
     animation-name: ${spreadCircle};
     animation-duration: 3s;
     animation-timing-function: ease-out;

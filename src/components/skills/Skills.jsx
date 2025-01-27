@@ -1,11 +1,5 @@
 import { SmainTitle, Sskills } from './Skills.styled'
-import icon1 from '../../assets/images/skills-icon1.png'
-import icon2 from '../../assets/images/skills-icon2.png'
-import icon3 from '../../assets/images/skills-icon3.png'
-import icon4 from '../../assets/images/skills-icon4.png'
-import icon5 from '../../assets/images/skills-icon5.png'
-import icon6 from '../../assets/images/skills-icon6.png'
-import icon7 from '../../assets/images/skills-icon7.png'
+
 import { SkillChart } from './SkillChart'
 import { useEffect } from 'react'
 import Vivus from 'vivus'
@@ -15,17 +9,6 @@ import { SkillChartDesign } from './SkillChartDesign'
 import FadeinSection from '../../lib/FadeinSection'
 
 const Skills = ({ setCurrentColor }) => {
-  const skills = [
-    { tool: 'illustrator', ability: 50, icon: icon1 },
-    { tool: 'photoshop', ability: 50, icon: icon2 },
-    { tool: 'Figma', ability: 50, icon: icon3 },
-    { tool: 'VScode', ability: 50, icon: icon4 },
-    { tool: 'HTML/CSS', ability: 50, icon: icon5 },
-    { tool: 'Javascript', ability: 50, icon: icon6 },
-    { tool: 'React', ability: 50, icon: icon7 },
-    { tool: 'Typescript', ability: 50, icon: icon7 },
-  ]
-
   const { ref, inView } = useInView({
     threshold: 0.3,
   })
