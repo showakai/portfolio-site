@@ -13,7 +13,7 @@ export const detailContent = {
     image: image1,
     content:
       '人材紹介をしている株式会社FANMAのコーポレートサイトです。デザイナーの作成したコーポレートサイトの実装を担当しました。Wordpress化しています。',
-    language: 'HTML｜CSS｜Javascript｜Wordpress',
+    language: 'HTML｜CSS｜Javascript｜PHP',
     period: '3週間',
     uiux: [
       `ローディングアニメーションに数値を表示して離脱を防いでいます`,
@@ -25,7 +25,7 @@ export const detailContent = {
     title: 'ポートフォリオサイト',
     subTitle: '私自身のポートフォリオ掲載用サイトです',
     image: image2,
-    url: 'https://iam-showakai.netlify.app/',
+    url: 'https://sho-wakai.com/',
     content:
       '転職活動での使用と、制作実績をまとめるために制作したポートフォリオサイトです。デザインに挑戦してみたかったので、illustratorでデザインから作成し、実装しました。',
     language: 'Javascript｜React｜styled-components',
