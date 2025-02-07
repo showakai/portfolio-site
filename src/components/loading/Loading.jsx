@@ -47,7 +47,6 @@ const Sloading = styled.div`
 
     color: ${({ theme }) => theme.colors.bgWhite};
     font-weight: 100;
-    text-transform: uppercase;
   }
   img {
     position: absolute;

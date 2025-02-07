@@ -7,7 +7,7 @@ export const SWorkDetail = styled.section`
     text-align: center;
   }
   h2 {
-    font-size: 40px;
+    font-size: 3.4rem;
     font-weight: 400;
     padding: 15px 0;
     color: ${({ theme }) => theme.colors.mainColor};
@@ -20,12 +20,12 @@ export const SWorkDetail = styled.section`
     text-decoration: none;
 
     cursor: pointer;
-    padding: 10px;
+    padding: 15px 10px;
     border: 1px solid ${({ theme }) => theme.colors.mainColor};
     color: ${({ theme }) => theme.colors.mainColor};
 
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     display: inline-block;
     width: 200px;
     transition: all 0.3s;
@@ -66,6 +66,7 @@ export const SWorkDetail = styled.section`
     font-size: 14px;
     width: 60%;
     margin: 80px auto;
+    font-family: ${({ theme }) => theme.fonts.jaFont};
 
     & div {
       margin-bottom: 80px;

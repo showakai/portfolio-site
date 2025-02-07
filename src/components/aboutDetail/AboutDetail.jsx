@@ -123,7 +123,7 @@ const AboutDetail = () => {
               <h3 className="strength__title">向上心</h3>
               <h4 className="strength__subtitle">ambition</h4>
               <p className="strength__text">
-                常により自分の成長につながる方向を模索しています。
+                常に自分の成長に大きくつながる方向を模索しています。
               </p>
             </div>
             <div className="iam__strength-box">
@@ -227,7 +227,7 @@ const AboutDetail = () => {
                     <span className="dot"></span>
                     <FadeinSection dir="up">
                       <p className="text">
-                        京都府に生まれる。学生時代は英語と世界史が大好きで、特に世界史は毎日世界地図を眺めるほど楽しんでいた得意科目。
+                        京都府に生まれる。学生時代は英語と世界史が大好きで、特に世界史は毎日教科書を眺めるほど楽しんでいた得意科目。
                       </p>
                     </FadeinSection>
                   </li>
@@ -241,7 +241,7 @@ const AboutDetail = () => {
                     <FadeinSection dir="up">
                       <p className="text">
                         同志社大学文学部入学。
-                        アメリカ史を専攻し、黒人女性の権利向上を研究。3年次に休学し、カナダ語学留学や、キューバ縦断を経験する。
+                        アメリカ史を専攻し、米国における女性の権利向上を研究。3年次に休学し、カナダ語学留学や、キューバ縦断を経験する。
                       </p>
                     </FadeinSection>
                   </li>

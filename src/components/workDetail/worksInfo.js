@@ -13,7 +13,7 @@ export const detailContent = {
     image: image1,
     content:
       '人材紹介をしている株式会社FANMAのコーポレートサイトです。デザイナーの作成したコーポレートサイトの実装を担当しました。Wordpress化しています。',
-    language: 'HTML/CSS/Javascript/Wordpress',
+    language: 'HTML｜CSS｜Javascript｜Wordpress',
     period: '3週間',
     uiux: [
       `ローディングアニメーションに数値を表示して離脱を防いでいます`,
@@ -28,8 +28,8 @@ export const detailContent = {
     url: 'https://iam-showakai.netlify.app/',
     content:
       '転職活動での使用と、制作実績をまとめるために制作したポートフォリオサイトです。デザインに挑戦してみたかったので、illustratorでデザインから作成し、実装しました。',
-    language: 'Javascript/React/styled-components',
-    period: 'デザイン 2週間／実装　4週間',
+    language: 'Javascript｜React｜styled-components',
+    period: 'デザイン 2週間｜実装　4週間',
     uiux: [
       '操作性や使用感を保ちながら、デザインも綺麗に見えるようなアニメーションを実装しています。',
       `デザインに関しては「柔軟性と広がり」をテーマにして作成しました。情報がわかりやすく伝えられるように、情報設計、配置を行いました。`,
@@ -43,7 +43,7 @@ export const detailContent = {
     url: 'https://izanow.co.jp/',
     content:
       '美容商品を取り扱う株式会社izanowのコーポレートサイト及び商品ページの実装部分を担当しました。お問い合わせページではPHPを使用して、お問い合わせ内容が指定アドレスに転送されるように実装しています。',
-    language: 'HTML/CSS/Javascript',
+    language: 'HTML｜CSS｜Javascript｜ PHP',
     period: '2週間',
     uiux: [
       `商品ページに合わせたローディングアニメーションを提案し、実装しています。`,
@@ -58,8 +58,8 @@ export const detailContent = {
     url: 'https://sho-test.com/',
     content:
       '個人制作で架空で作成したリゾートホテルのコーポレートサイトです（トップページのみ）。デザインから、実装、デプロイまで行いました。',
-    language: 'HTML/CSS/Javascript',
-    period: 'デザイン 3日 / 実装 1週間',
+    language: 'HTML｜CSS｜Javascript',
+    period: 'デザイン 3日 ｜ 実装 1週間',
     uiux: [
       `javascriptを使用し、スクロールに合わせたアニメーションやフェードインを入れています。`,
     ],
@@ -71,8 +71,8 @@ export const detailContent = {
     url: 'https://household-app-silk.vercel.app/',
     content:
       'Reactの学習用でで作成した家計簿アプリです。データの基本操作である「CRUD機能」の実装を目的として作成しました。月別でのデータの確認は、Chart.jsを使用して実装し、データはfirebaseで管理しています。',
-    language: 'React/Typescript/MUI/Firebase/Chart.js/Fullcalendar',
-    period: '2週間',
+    language: 'React｜Typescript｜MUI｜Firebase｜Chart.js｜Fullcalendar',
+    period: '3週間',
     uiux: [
       `トップでは直感的に記入できるように、類似アプリのインターフェースを参考にカレンダをセンターに表示しています。`,
       `記入の際、それぞれの項目にバリデーションを設けてエラーメッセージを出しているので、不備のある入力を防止できます。`,
@@ -87,7 +87,7 @@ export const detailContent = {
     url: 'https://worldweather-sw.netlify.app',
     content:
       'React学習で作成した個人開発の天気予報アプリです。全世界から検索した地名の天気を確認できます。Weather APIからデータをfetchして書き出す機能を実装しています。',
-    language: 'Typescript/React/WeatherAPI',
+    language: 'Typescript｜React｜WeatherAPI',
     period: '1週間',
     uiux: `使いやすさを重視した、シンプルなUIです。ユーザーが指定のワード以外を入力した際は、エラーとしてポップが表示されるようにしています。
 `,

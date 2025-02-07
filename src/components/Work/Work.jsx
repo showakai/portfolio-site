@@ -87,7 +87,7 @@ const Work = () => {
           paddingTop: isTopPage ? `calc(100vh + 100px)` : '130px',
         }}
       >
-        <div className="side">
+        <div className="side" style={{ display: isTopPage ? 'block' : 'none' }}>
           <div className="side-nav">Work</div>
           <div className="side-dot"></div>
           <div className="side-line"></div>

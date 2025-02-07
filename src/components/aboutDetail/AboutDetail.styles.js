@@ -71,6 +71,7 @@ export const SAboutDetail = styled.section`
       width: 50%;
       line-height: 2.5;
       padding-bottom: 150px;
+      font-family: ${({ theme }) => theme.fonts.jaFont};
     }
 
     &__strength {
@@ -223,6 +224,8 @@ export const SAboutDetail = styled.section`
     height: 100vh;
     overflow-y: hidden;
     margin-top: 0;
+    font-family: ${({ theme }) => theme.fonts.jaFont};
+
     .main-title {
       color: ${({ theme }) => theme.colors.white};
       text-align: center;
